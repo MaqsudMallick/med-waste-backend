@@ -2,7 +2,9 @@ import requests
 from PIL import Image
 from io import BytesIO
 from model import get_class
-url = "http://192.168.0.152:8080/shot.jpg"
+
+cam_address = "ENTER_YOUR_CAM_ADDRESS"
+url = f"{cam_address}/shot.jpg"
 
 
 def capture():
